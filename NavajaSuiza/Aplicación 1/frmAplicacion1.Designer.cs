@@ -42,6 +42,7 @@
             this.TextForm1.Name = "TextForm1";
             this.TextForm1.Size = new System.Drawing.Size(100, 20);
             this.TextForm1.TabIndex = 0;
+            this.TextForm1.TextChanged += new System.EventHandler(this.TextForm1_TextChanged);
             // 
             // contextMenuStrip1
             // 

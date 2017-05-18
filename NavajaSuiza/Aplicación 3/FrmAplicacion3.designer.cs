@@ -52,6 +52,7 @@
             this.TextBaseForm3.Name = "TextBaseForm3";
             this.TextBaseForm3.Size = new System.Drawing.Size(100, 20);
             this.TextBaseForm3.TabIndex = 1;
+            this.TextBaseForm3.TextChanged += new System.EventHandler(this.TextBaseForm3_TextChanged);
             // 
             // TextExpForm3
             // 
@@ -59,6 +60,7 @@
             this.TextExpForm3.Name = "TextExpForm3";
             this.TextExpForm3.Size = new System.Drawing.Size(100, 20);
             this.TextExpForm3.TabIndex = 2;
+            this.TextExpForm3.TextChanged += new System.EventHandler(this.TextExpForm3_TextChanged);
             // 
             // label1
             // 

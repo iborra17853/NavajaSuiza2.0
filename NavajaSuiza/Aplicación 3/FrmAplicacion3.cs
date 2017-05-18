@@ -27,19 +27,26 @@ namespace NavajaSuiza.Aplicación_3
             i = 1;
 
 
-            if (numero > 0) 
-                
-            for(i = 1; i <= exponente; i++)
-            {
-           
-                resultado = resultado * numero;
-    }
-          MessageBox.Show("El resultado es" + " " + resultado);
+            if (numero > 0)
 
+                for (i = 1; i <= exponente; i++)
+                {
 
-
-
-            
-            }
+                    resultado = resultado * numero;
+                }
+            MessageBox.Show("El resultado es" + " " + resultado);
         }
+
+        private void TextBaseForm3_TextChanged(object sender, EventArgs e)
+        {
+            TextBaseForm3.MaxLength = 4;
+
+        }
+
+        private void TextExpForm3_TextChanged(object sender, EventArgs e)
+        {
+            TextExpForm3.MaxLength = 4;
+
+        }
+    }
 }

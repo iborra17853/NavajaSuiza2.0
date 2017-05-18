@@ -43,14 +43,11 @@ namespace NavajaSuiza.Aplicación_2
 
                 MessageBox.Show("Numero mal introducido");
             }
+        }
 
-            
-
-
-
-
-
-
+        private void TextForm2_TextChanged(object sender, EventArgs e)
+        {
+            TextForm2.MaxLength = 2;
         }
     }
 }

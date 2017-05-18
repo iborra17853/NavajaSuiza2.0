@@ -49,6 +49,7 @@
             this.TextForm2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.TextForm2.Size = new System.Drawing.Size(100, 20);
             this.TextForm2.TabIndex = 1;
+            this.TextForm2.TextChanged += new System.EventHandler(this.TextForm2_TextChanged);
             // 
             // button1
             // 

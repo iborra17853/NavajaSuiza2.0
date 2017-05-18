@@ -41,5 +41,10 @@ namespace NavajaSuiza.Aplicación_1
             }
                      
         }
+
+        private void TextForm1_TextChanged(object sender, EventArgs e)
+        {
+            TextForm1.MaxLength = 5;
+        }
     }
 }

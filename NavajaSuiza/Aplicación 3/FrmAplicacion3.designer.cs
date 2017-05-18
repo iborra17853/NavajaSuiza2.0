@@ -53,6 +53,7 @@
             this.TextBaseForm3.Size = new System.Drawing.Size(100, 20);
             this.TextBaseForm3.TabIndex = 1;
             this.TextBaseForm3.TextChanged += new System.EventHandler(this.TextBaseForm3_TextChanged);
+            this.TextBaseForm3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBaseForm3_KeyPress);
             // 
             // TextExpForm3
             // 
@@ -61,6 +62,7 @@
             this.TextExpForm3.Size = new System.Drawing.Size(100, 20);
             this.TextExpForm3.TabIndex = 2;
             this.TextExpForm3.TextChanged += new System.EventHandler(this.TextExpForm3_TextChanged);
+            this.TextExpForm3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextExpForm3_KeyPress);
             // 
             // label1
             // 

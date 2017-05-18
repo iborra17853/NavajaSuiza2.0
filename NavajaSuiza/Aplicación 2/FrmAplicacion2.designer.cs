@@ -50,6 +50,7 @@
             this.TextForm2.Size = new System.Drawing.Size(100, 20);
             this.TextForm2.TabIndex = 1;
             this.TextForm2.TextChanged += new System.EventHandler(this.TextForm2_TextChanged);
+            this.TextForm2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextForm2_KeyPress);
             // 
             // button1
             // 

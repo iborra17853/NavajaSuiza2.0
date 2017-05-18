@@ -16,7 +16,6 @@ namespace NavajaSuiza.Aplicación_1
         {
             InitializeComponent();
         }
-
         private void BotonPrimos(object sender, EventArgs e)
         {
             int numero, contador, i;
@@ -45,6 +44,27 @@ namespace NavajaSuiza.Aplicación_1
         private void TextForm1_TextChanged(object sender, EventArgs e)
         {
             TextForm1.MaxLength = 5;
+        }
+
+        private void TextForm1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Introducir solo numeros");
+            }
         }
     }
 }

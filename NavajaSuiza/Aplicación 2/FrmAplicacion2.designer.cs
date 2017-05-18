@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextForm2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -42,12 +42,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Número entre 1 y 15";
             // 
-            // textBox1
+            // TextForm2
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.TextForm2.Location = new System.Drawing.Point(151, 87);
+            this.TextForm2.Name = "TextForm2";
+            this.TextForm2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.TextForm2.Size = new System.Drawing.Size(100, 20);
+            this.TextForm2.TabIndex = 1;
             // 
             // button1
             // 
@@ -57,18 +58,18 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Resultado";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Boton1al15);
             // 
-            // Form1
+            // FrmAplicacion2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TextForm2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmAplicacion2";
+            this.Text = "Numero de 1 a 15";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,7 +78,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TextForm2;
         private System.Windows.Forms.Button button1;
     }
 }

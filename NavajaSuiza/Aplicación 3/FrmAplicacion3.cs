@@ -17,12 +17,12 @@ namespace NavajaSuiza.Aplicación_3
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BaseExponente(object sender, EventArgs e)
         {
             int numero, exponente, resultado, i;
 
-            numero = int.Parse(textBox1.Text);
-            exponente = int.Parse(textBox2.Text);
+            numero = int.Parse(TextBaseForm3.Text);
+            exponente = int.Parse(TextExpForm3.Text);
             resultado = 1;
             i = 1;
 

@@ -17,12 +17,12 @@ namespace NavajaSuiza.Aplicación_2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Boton1al15(object sender, EventArgs e)
         {
             int numero, i, j;
             string resultado="";
 
-            numero = int.Parse(textBox1.Text);
+            numero = int.Parse(TextForm2.Text);
 
 
             if (numero >= 1 && numero <= 15)

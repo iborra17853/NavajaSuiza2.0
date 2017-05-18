@@ -17,7 +17,7 @@ namespace NavajaSuiza.Aplicación_4
             InitializeComponent();
         }
 
-        private void BBserie_Click(object sender, EventArgs e)
+        private void Multiplos3(object sender, EventArgs e)
         {
             int i, suma, contNum;
             string texto;

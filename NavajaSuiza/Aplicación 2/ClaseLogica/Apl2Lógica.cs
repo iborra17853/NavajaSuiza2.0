@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace NavajaSuiza.Aplicación_2.ClaseLogica
 {           
     
-    class Apl2Lógica
+    public class Apl2Lógica
     {
         /// <summary>
         /// Nos devolverá la funcion de que el numero elegido aparecerá tantas veces como se indique entre un valor de 1 y 15 

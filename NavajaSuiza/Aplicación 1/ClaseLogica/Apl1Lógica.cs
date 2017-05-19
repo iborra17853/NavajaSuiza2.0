@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NavajaSuiza.Aplicación_1.ClaseLogica
 {
-    class Apl1Lógica
+    public class Apl1Lógica
     {
         /// <summary>
         /// identifica si el numero que se ignresara es primo o no

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NavajaSuiza.Aplicación_3.ClaseLogica
 {
-    class Apl3Lógica
+    public class Apl3Lógica
     {
         /// <summary>
         /// hará el calculo entre una base y un exponente
@@ -26,8 +26,15 @@ namespace NavajaSuiza.Aplicación_3.ClaseLogica
                 {
 
                     resultado = resultado * basee;
+                    mensaje = "El resultado será " + resultado;
+
                 }
-            mensaje = "El resultado será " + resultado;
+
+
+            else
+            {
+                mensaje = "Introduzca un numero valido";
+            }
             return mensaje;
         }
     }

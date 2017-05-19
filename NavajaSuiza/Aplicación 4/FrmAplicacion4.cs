@@ -16,33 +16,17 @@ namespace NavajaSuiza.Aplicación_4
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Llama a la aplicación 4
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Multiplos3(object sender, EventArgs e)
         {
-            int i, suma, contNum;
-            string texto;
-
-            i = 3;
-            suma = 0;
-            contNum = 0;
-            texto = "";
-
-            while (i <= 100)
-            {
-                if (contNum == 10)
-                {
-                    contNum = 0;
-                    texto = texto + "\n";
-                }
-                if (i % 3 == 0)
-                {
-                    texto = texto + i + ", ";
-                    suma = suma + i;
-                    contNum++;
-                }
-                i = i + 1;          
-            }
-            MessageBox.Show("Los múltiplos de 3 son: " +"\n" + texto + "y la suma de todos es: " + suma);
+            string mensaje = ClaseLogica.Apl4Lógica.multiplos3();
+            MessageBox.Show(mensaje);
         }
     }
 }
+    
+

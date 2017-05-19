@@ -16,40 +16,30 @@ namespace NavajaSuiza.Aplicación_2
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Llama a la aplicacion 2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Boton1al15(object sender, EventArgs e)
         {
-            int numero, i, j;
-            string resultado="";
-
-            numero = int.Parse(TextForm2.Text);
-
-
-            if (numero >= 1 && numero <= 15)
-            {
-
-                for (i = 1; i <= numero; i++)
-                {
-                    for (j = 1; j <= 10; j++)
-                    {
-                        resultado = resultado + j+",";
-                    }
-                    resultado = resultado + "\n";
-                }
-                MessageBox.Show(resultado);
-            }
-            else
-            {
-
-                MessageBox.Show("Numero mal introducido");
-            }
+            string mensaje = ClaseLogica.Apl2Lógica.contar15(int.Parse(TextForm2.Text));
+            MessageBox.Show(mensaje);
         }
-
+        /// <summary>
+        /// maximo tamaño del textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextForm2_TextChanged(object sender, EventArgs e)
         {
             TextForm2.MaxLength = 2;
         }
-
+        /// <summary>
+        /// Permite solo numeros
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextForm2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))

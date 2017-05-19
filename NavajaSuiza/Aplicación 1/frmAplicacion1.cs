@@ -16,36 +16,31 @@ namespace NavajaSuiza.Aplicación_1
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Llama a la aplicacion 1
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BotonPrimos(object sender, EventArgs e)
         {
-            int numero, contador, i;
-            contador = 0;
-            i = 1;
-            numero = int.Parse(TextForm1.Text);
-            while (i <= numero)
-            {
-                if (numero % i == 0)
-                    {
-                    contador = contador + 1;
-                }
-                i = i + 1;
-            }
-            if (contador > 2)
-            {
-                MessageBox.Show("El numero introducido no es primo");
-            }
-            else
-            {
-                MessageBox.Show("El numero introducido si que es primo");
-            }
-                     
-        }
+            string mensaje = ClaseLogica.Apl1Lógica.EsONoPrimo(int.Parse(TextForm1.Text));
+            MessageBox.Show(mensaje);
 
+        }
+        /// <summary>
+        /// Limitamos el textBox a 5 caracteres como maximo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextForm1_TextChanged(object sender, EventArgs e)
         {
             TextForm1.MaxLength = 5;
         }
-
+        /// <summary>
+        /// Prohibmos que nos puedan insertar letras, para asegurarnos que son números
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextForm1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))

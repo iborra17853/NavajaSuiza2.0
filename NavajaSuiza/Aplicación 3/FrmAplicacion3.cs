@@ -16,25 +16,17 @@ namespace NavajaSuiza.Aplicación_3
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// LLama a la aplicacion 3
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BaseExponente(object sender, EventArgs e)
         {
-            int numero, exponente, resultado, i;
+            
+            string mensaje = ClaseLogica.Apl3Lógica.BaseExponente(int.Parse(TextBaseForm3.Text), int.Parse(TextExpForm3.Text));
+            MessageBox.Show(mensaje);
 
-            numero = int.Parse(TextBaseForm3.Text);
-            exponente = int.Parse(TextExpForm3.Text);
-            resultado = 1;
-            i = 1;
-
-
-            if (numero > 0)
-
-                for (i = 1; i <= exponente; i++)
-                {
-
-                    resultado = resultado * numero;
-                }
-            MessageBox.Show("El resultado es" + " " + resultado);
         }
 
         private void TextBaseForm3_TextChanged(object sender, EventArgs e)
@@ -42,14 +34,22 @@ namespace NavajaSuiza.Aplicación_3
             TextBaseForm3.MaxLength = 4;
 
         }
-
+        /// <summary>
+        /// valor 4 como máxima longitud del textBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextExpForm3_TextChanged(object sender, EventArgs e)
         {
             TextExpForm3.MaxLength = 4;
 
         }
-
-        private void TextBaseForm3_KeyPress(object sender, KeyPressEventArgs e)
+        /// <summary>
+        /// Evitamos que introduzcan letras, solo números
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextExpForm3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))
             {
@@ -69,8 +69,7 @@ namespace NavajaSuiza.Aplicación_3
                 MessageBox.Show("Introducir solo numeros");
             }
         }
-
-        private void TextExpForm3_KeyPress(object sender, KeyPressEventArgs e)
+             private void TextBaseForm3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))
             {
